@@ -1,0 +1,74 @@
+/* 1. Global Styles */
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* 2. Heading */
+h1 {
+    font-size: 16px;
+    color: #444444;
+}
+
+/* 3. Container */
+.container {
+    text-align: center;
+    margin: 5px;
+    font-size: 13px;
+}
+
+/* 4. Offer Section */
+.offer {
+    display: inline-block;
+    width: 400px;
+    margin: 4px;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+/* 5. Offer Title */
+.offer-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00b3b3;
+    margin: 0;
+    padding: 15px;
+}
+
+/* 6. Offer Contents */
+.offer-contents {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+/* 7. Table Styling */
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border-spacing: 0;
+}
+
+th {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777777;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+td {
+    font-weight: 300; /* lighter than normal */
+    color: #444444;
+    padding: 20px 10px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* 8. Final Value */
+.final-value {
+    font-weight: bold;
+    color: #2222ff;
+}
