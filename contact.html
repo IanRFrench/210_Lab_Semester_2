@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <!-- Header (replace with your own if needed) -->
+    <header>
+        <h2>My Website</h2>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <form action="formPost.html" method="get">
+
+            <!-- Contact Information Section -->
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <!-- Other Information Section -->
+            <fieldset>
+                <legend>Other Information</legend>
+
+                <p>Are you a student?</p>
+
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="student" value="yes" checked>
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="student" value="no">
+                <br><br>
+
+                <label for="year">Student Year:</label>
+                <select id="year" name="year">
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select>
+                <br><br>
+
+                <label for="enjoyment">Major Enjoyment (1 = Hate it, 5 = Love it):</label>
+                <input type="range" id="enjoyment" name="enjoyment" min="1" max="5">
+                <br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Submit Form">
+
+        </form>
+    </main>
+
+    <!-- Footer (replace with your own if needed) -->
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
