@@ -1,74 +1,52 @@
-/* 1. Global Styles */
-body {
-    font-family: Roboto, Helvetica, sans-serif;
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* 2. Heading */
-h1 {
-    font-size: 16px;
-    color: #444444;
+/* Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* 3. Container */
-.container {
-    text-align: center;
-    margin: 5px;
-    font-size: 13px;
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 70%;
 }
 
-/* 4. Offer Section */
-.offer {
-    display: inline-block;
-    width: 400px;
-    margin: 4px;
-    text-align: center;
-    border: 1px solid #cccccc;
+/* Title */
+.title {
+    display: flex;
+    align-items: baseline;
 }
 
-/* 5. Offer Title */
-.offer-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #00b3b3;
-    margin: 0;
-    padding: 15px;
+/* Summary */
+.summary {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
-/* 6. Offer Contents */
-.offer-contents {
-    padding: 20px;
-    background-color: #fafafa;
+/* Paragraph inside div inside summary */
+.summary div p {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* 7. Table Styling */
-table {
-    width: 100%;
-    background-color: #ffffff;
-    border-spacing: 0;
+/* Ingredients and Directions */
+.ingredients,
+.directions {
+    flex-grow: 1;
+    flex-basis: 45%;
 }
 
-th {
-    font-size: 12px;
-    font-weight: bold;
-    color: #777777;
-    padding: 10px;
-    margin: 0;
-    text-align: left;
-    border-bottom: 1px solid #f1f1f1;
-}
-
-td {
-    font-weight: 300; /* lighter than normal */
-    color: #444444;
-    padding: 20px 10px;
-    margin: 0;
-    text-align: left;
-    border-bottom: 1px solid #f1f1f1;
-}
-
-/* 8. Final Value */
-.final-value {
-    font-weight: bold;
-    color: #2222ff;
+/* Related Content */
+.related-content {
+    flex-grow: 1;
+    flex-basis: 20%;
 }
