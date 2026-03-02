@@ -1,0 +1,52 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 70%;
+}
+
+/* Title */
+.title {
+    display: flex;
+    align-items: baseline;
+}
+
+/* Summary */
+.summary {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+/* Paragraph inside div inside summary */
+.summary div p {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Ingredients and Directions */
+.ingredients,
+.directions {
+    flex-grow: 1;
+    flex-basis: 45%;
+}
+
+/* Related Content */
+.related-content {
+    flex-grow: 1;
+    flex-basis: 20%;
+}
