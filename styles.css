@@ -1,21 +1,29 @@
-body {
-    font-family: Arial;
-    text-align: center;
-}
 
 #board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    width: 300px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+  justify-content: center;
 }
 
-.cell {
-    border: 2px solid black;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+#board div {
+  border: 2px solid #8cc6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  font-family: Arial, sans-serif;
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
 }
