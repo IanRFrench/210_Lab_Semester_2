@@ -1,22 +1,102 @@
-<!DOCTYPE HTML>
-<html>
-   <head>
-      <title>Tic-Tac-Toe</title>
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <h1>Tic-Tac-Toe</h1>
-       
-      <div id="board">
-         <div class="x">X</div>
-         <div class="o">O</div>
-         <div></div>
-         <div></div>
-         <div class="x">X</div>
-         <div></div>
-         <div class="o">O</div>
-         <div></div>
-         <div class="x">X</div>
-      </div>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER SECTION -->
+<header class="header">
+    <h1>Ian French</h1>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="about-container">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>
+                I am a web development student learning how to build responsive
+                and accessible websites. I enjoy working with HTML, CSS, and
+                modern design techniques.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h3>Project One</h3>
+            <p>A simple website demonstrating HTML and CSS layout techniques.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h3>Project Two</h3>
+            <p>A responsive landing page designed with CSS Grid.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h3>Project Three</h3>
+            <p>A portfolio layout showcasing responsive design skills.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Responsive Design</li>
+        <li>CSS Grid</li>
+        <li>Git</li>
+    </ul>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <input type="text" placeholder="Name" required>
+
+        <input type="email" placeholder="Email" required>
+
+        <textarea placeholder="Message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</body>
 </html>
