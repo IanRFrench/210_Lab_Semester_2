@@ -1,29 +1,13 @@
-
-#board {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
-  grid-gap: 10px;
-  justify-content: center;
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
 }
 
-#board div {
-  border: 2px solid #8cc6ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 72px;
-  font-family: Arial, sans-serif;
+input {
+width: 50px;
 }
 
-.x {
-  color: red;
-}
-
-.o {
-  color: blue;
-}
-
-h1 {
-  text-align: center;
+button {
+margin-top: 10px;
+padding: 5px 10px;
 }
