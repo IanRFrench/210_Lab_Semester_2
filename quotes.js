@@ -1,38 +1,36 @@
 const quotes = [
-  { q: "Be kind whenever possible. It is always possible.", a: "Dalai Lama" },
-  { q: "Kindness is a language which the deaf can hear and the blind can see.", a: "Mark Twain" },
-  { q: "No act of kindness, no matter how small, is ever wasted.", a: "Aesop" },
-  { q: "Carry out a random act of kindness, with no expectation of reward.", a: "Princess Diana" },
-  { q: "Kindness begins with the understanding that we all struggle.", a: "Charles Glassman" },
-  { q: "A warm smile is the universal language of kindness.", a: "William Arthur Ward" },
-  { q: "Wherever there is a human being, there is an opportunity for kindness.", a: "Lucius Annaeus Seneca" },
-  { q: "Kindness can transform someone’s dark moment with a blaze of light.", a: "Amy Leigh Mercree" },
-  { q: "Act with kindness, but do not expect gratitude.", a: "Confucius" },
-  { q: "Unexpected kindness is the most powerful, least costly, and most underrated agent of human change.", a: "Bob Kerrey" }
+  { q: "Be yourself; everyone else is already taken.", a: "Oscar Wilde" },
+  { q: "The only way to do great work is to love what you do.", a: "Steve Jobs" },
+  { q: "In the middle of difficulty lies opportunity.", a: "Albert Einstein" },
+  { q: "Do what you can, with what you have, where you are.", a: "Theodore Roosevelt" },
+  { q: "Happiness depends upon ourselves.", a: "Aristotle" },
+  { q: "Turn your wounds into wisdom.", a: "Oprah Winfrey" },
+  { q: "Dream big and dare to fail.", a: "Norman Vaughan" },
+  { q: "What we think, we become.", a: "Buddha" },
+  { q: "Act as if what you do makes a difference. It does.", a: "William James" },
+  { q: "Success is not final, failure is not fatal.", a: "Winston Churchill" }
 ];
 
-// Get container
 const container = document.getElementById("quotes-container");
 
-// Loop through quotes
+// loop through quotes
 for (let i = 0; i < quotes.length; i++) {
 
-  // Create card div
+  // create card
   const card = document.createElement("div");
   card.classList.add("quote-card");
 
-  // Create quote text
+  // quote text (with quotation marks)
   const quoteText = document.createElement("p");
-  quoteText.textContent = `"${quotes[i].q}"`; // wrapped in quotes
+  quoteText.textContent = `"${quotes[i].q}"`;
 
-  // Create author
+  // author (italic + dash)
   const author = document.createElement("p");
-  author.textContent = `– ${quotes[i].a}`; // dash before name
+  author.textContent = `– ${quotes[i].a}`;
   author.classList.add("author");
 
-  // Append elements
+  // append elements
   card.appendChild(quoteText);
   card.appendChild(author);
-
   container.appendChild(card);
 }

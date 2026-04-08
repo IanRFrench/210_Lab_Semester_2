@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Quotes</title>
+
   <style>
     body {
-      text-align: center;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f5f5f5;
+    }
+
+    #quotes-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .quote-card {
-      background-color: #cce5ff; /* colored background */
-      padding: 15px;            /* spacing inside */
-      margin: 15px auto;        /* spacing outside + center */
-      border-radius: 10px;      /* rounded corners */
-      width: fit-content;       /* required */
+      background-color: lightblue; /* colored background */
+      padding: 15px;               /* padding */
+      margin: 10px;                /* spacing */
+      border-radius: 10px;         /* rounded corners */
+      width: fit-content;          /* required */
+      text-align: center;
     }
 
     .author {
-      font-style: italic;       /* italic author */
+      font-style: italic;          /* italic author */
+      margin-top: 5px;
     }
   </style>
 </head>
+
 <body>
 
   <h1>Quotes</h1>
 
+  <!-- Container -->
   <div id="quotes-container"></div>
 
-  <!-- Link JS at bottom -->
+  <!-- Link JS -->
   <script src="quotes.js"></script>
+
 </body>
 </html>
